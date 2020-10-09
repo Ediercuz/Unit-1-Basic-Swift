@@ -30,7 +30,7 @@ Agregar todas las funciones
     let nuevo = readLine()! 
     primerArray[val] = nuevo
   }
-  
+
   func imprimir(){
     for val in primerArray{
       print(val)
@@ -56,21 +56,6 @@ Agregar todas las funciones
       print("Seleccione una opcion entre 1 y 5")
 
       //Leer datos desde teclado
-      opc = Character(readLine()!)
-      switch opc{
-        case "1":
-          agregar()
-        case "2":
-          buscar()  
-        case "3":
-          modificar()
-        case "4":
-          eliminar()
-        case "5":
-          imprimir()
-        default:
-          print("Incorrecto")
-      }
-    }while (opc != "0")
+      
   }
   dashboard()
