@@ -20,7 +20,13 @@ Agregar todas las funciones
    func buscar(){
     print("Ingrese el numero a buscar")
     let val = Int(readLine()!)!
-    print("El elemento del array es: \(primerArray[val])")
+    if (val == val){
+      print("El elemento del array es: \(primerArray[val])")
+    }
+    else if (val != val){
+      print("el valor no existe")
+    }
+    
   }
 
   func modificar(){
