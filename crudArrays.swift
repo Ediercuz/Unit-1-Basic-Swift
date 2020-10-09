@@ -17,10 +17,10 @@ Agregar todas las funciones
     primerArray.append(val)
   }
 
-  func imprimir(){
-    for val in primerArray{
-      print(val)
-    }
+   func buscar(){
+    print("Ingrese el numero a buscar")
+    let val = Int(readLine()!)!
+    print("El elemento del array es: \(primerArray[val])")
   }
 
   func modificar(){
@@ -30,17 +30,17 @@ Agregar todas las funciones
     let nuevo = readLine()! 
     primerArray[val] = nuevo
   }
+  
+  func imprimir(){
+    for val in primerArray{
+      print(val)
+    }
+  }
 
   func eliminar(){
     print("Ingrese el numero a eliminar")
     let val = Int(readLine()!)!
     primerArray.remove(at: val)
-  }
-
-  func buscar(){
-    print("Ingrese el numero a buscar")
-    let val = Int(readLine()!)!
-    print("El elemento del array es: \(primerArray[val])")
   }
   
   func dashboard(){
