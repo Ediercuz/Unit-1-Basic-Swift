@@ -13,34 +13,34 @@ Agregar todas las funciones
   
   func agregar(){
     print("Agrega un elemento")
-    let valor = readLine()!   
-    primerArray.append(valor)
+    let val = readLine()!   
+    primerArray.append(val)
   }
 
   func imprimir(){
-    for valor in primerArray{
-      print(valor)
+    for val in primerArray{
+      print(val)
     }
   }
 
   func modificar(){
-    print("Ingrese el numero de elemento a modificar (empieza en 0)")
-    let valor = Int(readLine()!)!
-    print("Ingrese nuevo valor")
+    print("Ingrese el numero a editar")
+    let val = Int(readLine()!)!
+    print("Ingrese el nuevo")
     let nuevo = readLine()! 
-    primerArray[valor] = nuevo
+    primerArray[val] = nuevo
   }
 
   func eliminar(){
-    print("Ingrese el numero de elemento a eliminar (empieza en 0)")
-    let valor = Int(readLine()!)!
-    primerArray.remove(at: valor)
+    print("Ingrese el numero a eliminar")
+    let val = Int(readLine()!)!
+    primerArray.remove(at: val)
   }
 
   func buscar(){
-    print("Ingrese el numero de elemento a buscar (empieza en 0)")
-    let valor = Int(readLine()!)!
-    print("El elemento del array es: \(primerArray[valor])")
+    print("Ingrese el numero a buscar")
+    let val = Int(readLine()!)!
+    print("El elemento del array es: \(primerArray[val])")
   }
   
   func dashboard(){
