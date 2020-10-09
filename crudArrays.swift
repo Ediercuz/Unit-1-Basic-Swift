@@ -1,45 +1,76 @@
 /**
-* Nombre: funciones.swift
-* Objetivo: muestra la operacion de array en swift con su menu
-* Autor: Luis David Delgado
-* Fecha: 2 octubre de 2020
+* Nombre: crudArrays.swift
+* Objetivo: muestra la operación de los array en swift con su menu
+* Fecha: 05/10/20
+Autor: Luis David Delgado Díaz
 */
-func agregarElelemto{
-
-}
-func buscarElelemto{
-
-}
-
+import Foundation
 /**
-*Funcion dashboard
+Agregar todas las funciones
 */
-func dashboard(){
 
-    var opc: Character
-    opc = "S"
-    while opc == "S" && opc == "s"
-    print("---- Operaciones con Arreglos em Swift ----")
-    print("1. Agregar elemento")
-    print("2. Buscar un elemento")
-    print("3. Cambiar un elemento")
-    print("4. Borrar un elemento")
-    print("5. Imprimir un reporte")
-    print("\n")
-    print("Seleccione una opcion entre 1 y 5")
-    
-    switch opc {
-    case "1":
-        agregarElemento()
-    case "2":
-        buscarElemento()
-        
-    default:
-        print("*** Fin del programa")
-        opc = "N"
+  var primerArray = Array<String>()
+  
+  func agregar(){
+    print("Agrega un elemento")
+    let valor = readLine()!   
+    primerArray.append(valor)
+  }
+
+  func imprimir(){
+    for valor in primerArray{
+      print(valor)
     }
-    
-    
-}
+  }
 
-dashboard()
+  func modificar(){
+    print("Ingrese el numero de elemento a modificar (empieza en 0)")
+    let valor = Int(readLine()!)!
+    print("Ingrese nuevo valor")
+    let nuevo = readLine()! 
+    primerArray[valor] = nuevo
+  }
+
+  func eliminar(){
+    print("Ingrese el numero de elemento a eliminar (empieza en 0)")
+    let valor = Int(readLine()!)!
+    primerArray.remove(at: valor)
+  }
+
+  func buscar(){
+    print("Ingrese el numero de elemento a buscar (empieza en 0)")
+    let valor = Int(readLine()!)!
+    print("El elemento del array es: \(primerArray[valor])")
+  }
+  
+  func dashboard(){
+    var opc: Character = "0"
+    print("Operaciones con arreglos swift")
+    repeat{
+      print("1.- Agrega elemento")
+      print("2.- Busca elemento")
+      print("3.- Cambiar elemento")
+      print("4.- Borrar elemento")
+      print("5.- Imprimir elemento")
+      print("\n")
+      print("Seleccione una opcion entre 1 y 5")
+
+      //Leer datos desde teclado
+      opc = Character(readLine()!)
+      switch opc{
+        case "1":
+          agregar()
+        case "2":
+          buscar()  
+        case "3":
+          modificar()
+        case "4":
+          eliminar()
+        case "5":
+          imprimir()
+        default:
+          print("Incorrecto")
+      }
+    }while (opc != "0")
+  }
+  dashboard()
