@@ -20,13 +20,14 @@ c = 0
 //Implementar una función que regrese t o f, si identifica un triangulo.
 //Identificar el tipo de triangulo.
 func triangulo(){
+    //Se cargan los datos de las medidas de los triangulos
     print("Ingrese el lado 1: ")
     a = Int(readLine()!)!
     print("Ingrese el lado 2: ")
     b = Int(readLine()!)!
     print("Ingrese el lado 3: ")
     c = Int(readLine()!)!
-
+    //se hacen las comparaciones entre los triangulos para saber que tipo es
     if a == b && b == c {
         print("Es un triangulo equilatero")
     }
