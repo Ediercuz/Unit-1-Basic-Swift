@@ -12,7 +12,7 @@ Agregar todas las funciones
   var primerArray = Array<String>()
   
   func agregar(){
-    print("Agrega un elemento")
+    print("Agrega un elemento nuevo")
     let val = readLine()!   
     primerArray.append(val)
   }
@@ -68,8 +68,7 @@ Agregar todas las funciones
           eliminar()
         case "5":
           imprimir()
-        default:
-          print("Incorrecto")
+        
       }
     }while (opc != "0")
   }
