@@ -68,7 +68,8 @@ Agregar todas las funciones
           eliminar()
         case "5":
           imprimir()
-        
+        default:
+          print("Incorrecto")
       }
     }while (opc != "0")
   }
