@@ -112,13 +112,12 @@ func setRadio(vRadio:Float){
 
 }
 
-var c1 = Circulo(Vcolor:"Naranja", radio:12.45)
+//var c1 = Circulo(Vcolor:"Naranja", radio:12.45)
 
 
 
 
 
-/*
 // Creamos objeto de circulo
 var c1 = Circulo(Vcolor:"Naranja")
 print(c1.getColor())
@@ -132,7 +131,6 @@ print(c2.getColor())
 print(c2.getRadio())
 print(c2.area())
 
-*/
 
 /*
 

@@ -16,10 +16,10 @@ let edad = "55"
 
 var miArray = Array<String>() //arreglo String vacio
 // Agregar elementos
-miArray.append(nombre)
-miArray.append(apellido1)
-miArray.append(apellido2)
-miArray.append(edad)
+miArray.append(nombre);
+miArray.append(apellido1);
+miArray.append(apellido2);
+miArray.append(edad);
 
 //Imprimir los elementos del arreglo, mediante un ciclo for ....each
 

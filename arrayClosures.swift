@@ -32,7 +32,7 @@ let nombresOrdenados6 = nombres.sorted(by:{s1, s2 in s1 < s2})
 //reducir codigo sustituyendo por los argumentos abreviados
 let nombresOrdenados7 = nombres.sorted(by:{$0<$1})
 //Reducir codigo considerando solo operador
-let nombresOrdenados6 = nombres.sorted(by:{<})
+let nombresOrdenados7 = nombres.sorted(by:{<})
 
 //Closures finales son aquellas que forman parte de una función pero la closure
 //es el ultimo o el unico parametro de una función
